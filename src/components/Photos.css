@@ -1,0 +1,101 @@
+.photoscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: touse;
+}
+
+.photovhave {
+    margin: 1.5%;
+    box-shadow: 0 0 5px grey;
+    position: relative;
+    user-select: none;
+    background-color: rgb(233, 233, 233);
+    height: 200px;
+    width: 20%;
+
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s;
+}
+
+.photovhave:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px grey;
+}
+
+.titlebar {
+    display: flex;
+    font-family: touse;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: center;
+}
+
+.titlePage {
+    font-size: 7vw;
+    color: rgb(99, 99, 99);
+    cursor: default;
+
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.titlePage:hover {
+    color: #333;
+}
+
+.addImage {
+    font-size: 5vw;
+    color: rgb(99, 99, 99);
+
+    transition-property: color, transform;
+    transition-duration: 0.5s;
+}
+
+.addImage:hover {
+    color: #333;
+    transform: scale(1.2) rotate(90deg);
+}
+
+.imageboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    font-size: 2.5vw;
+    color: white;
+    cursor: default;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photoimage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imageboardts {
+    font-size: 1vw;
+}
+
+.imageboarddel {
+    font-size: 1vw;
+}
+
+.modalimage {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: touse;
+    src: url(../assets/touse.woff);
+}
